@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/menu/menu_to_college.xml",
+        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/src/main/res/menu/menu_to_college.xml"
+    },
+    {
+        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/menu/menu_to_bring.xml",
+        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/src/main/res/menu/menu_to_bring.xml"
+    },
+    {
+        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
+        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/src/main/res/menu/main.xml"
+    }
+]

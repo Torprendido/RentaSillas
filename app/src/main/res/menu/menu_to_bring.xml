@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/trash_48"
+        android:title="Elimina" />
+    <item
+        android:id="@+id/update_menu_bring"
+        android:icon="@drawable/update_48"
+        android:title="Cambia" />
+    <item
+        android:id="@+id/bring"
+        android:icon="@drawable/ok_48"
+        android:title="Entrega el pedido"/>
+</menu>
