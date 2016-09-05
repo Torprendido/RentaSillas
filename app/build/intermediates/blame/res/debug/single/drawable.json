@@ -126,5 +126,9 @@
     {
         "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
         "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/drawable/plus_16.png",
+        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/src/main/res/drawable/plus_16.png"
     }
 ]

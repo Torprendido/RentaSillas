@@ -25,7 +25,12 @@
         <activity
             android:name=".view.InsertUpdate"
             android:label="@string/title_activity_insert_update"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name=".RentaService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

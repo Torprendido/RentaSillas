@@ -1,9 +1,12 @@
 package com.torpre.rentasillas.view;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.view.menu.MenuPopupHelper;
+import android.support.v7.widget.ListPopupWindow;
 import android.support.v7.widget.PopupMenu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -22,6 +25,7 @@ import android.widget.TabHost;
 import android.widget.Toast;
 
 import com.torpre.rentasillas.R;
+import com.torpre.rentasillas.RentaService;
 import com.torpre.rentasillas.control.Control;
 import com.torpre.rentasillas.model.Historical;
 import com.torpre.rentasillas.model.Orders;
@@ -49,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void init() {
+        startService(new Intent(this, RentaService.class));
         control = new Control(this);
         ordersListViewToCollege = (ListView) findViewById(R.id.ordersListViewToCollege);
         ordersListViewToBring = (ListView) findViewById(R.id.ordersListViewToBring);
@@ -120,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void prepareMenuToCollege(View view) {
-        //TODO cambiar icono  agrega peido, launcher por sillas, cambiar la manera en que se muestra el popup y agregar notificaciones
+        //TODO agregar notificaciones, agregar notificaciones de estado a las listas con iconos, ordeenar las fechas por hora
         PopupMenu popup = new PopupMenu(this, view);
         forceShowIcon(popup);
         MenuInflater inflater = popup.getMenuInflater();
@@ -146,7 +151,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
         popup.show();
-
     }
 
     private void forceShowIcon(PopupMenu popup) {

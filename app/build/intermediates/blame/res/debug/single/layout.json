@@ -76,12 +76,12 @@
         "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/content_main.xml",
         "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
@@ -168,12 +168,12 @@
         "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
-    },
-    {
         "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
         "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/home/torpre/AndroidStudioProjects/RentaSillas/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",

@@ -32,6 +32,11 @@
             android:name="com.torpre.rentasillas.view.InsertUpdate"
             android:label="@string/title_activity_insert_update"
             android:theme="@style/AppTheme" />
+
+        <service
+            android:name="com.torpre.rentasillas.RentaService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
