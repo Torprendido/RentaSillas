@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -18,10 +17,10 @@ import com.torpre.rentasillas.control.Control;
 import com.torpre.rentasillas.model.Orders;
 
 import java.util.Calendar;
+import java.util.Date;
 
 public class InsertUpdate extends AppCompatActivity {
 
-    private Calendar dateOrder;
     private NumberPicker numRectangularGames;
     private NumberPicker numRoundGames;
     private NumberPicker numPinkCoverCloths;
@@ -138,9 +137,6 @@ public class InsertUpdate extends AppCompatActivity {
             address.setText(order.getAddress());
             date.setText(Control.convertTOString(order.getDate()));
             payment.setText(order.getPayment());
-
-            dateOrder = Calendar.getInstance();
-            dateOrder.setTime(order.getDate());
         }
     }
 
@@ -149,9 +145,9 @@ public class InsertUpdate extends AppCompatActivity {
         DatePickerDialog dpd = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                dateOrder = Calendar.getInstance();
-                dateOrder.set(year, monthOfYear, dayOfMonth);
-                date.setText(Control.convertTOString(dateOrder.getTime()));
+                Date dateOrder = Control.convertTODate(dayOfMonth + "/" + monthOfYear + "/" + year);
+                System.out.println("inserta fecha del pedido -> " + dateOrder.getTime());
+                date.setText(Control.convertTOString(dateOrder));
             }
         }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
         dpd.show();
@@ -169,7 +165,7 @@ public class InsertUpdate extends AppCompatActivity {
         order.setBlueCoverCloths(numBlueCoverCloths.getValue());
         order.setOrangeCoverCloths(numOrangeCoverCloths.getValue());
         order.setAddress(address.getText().length() == 0 ? null : address.getText().toString());
-        order.setDate(dateOrder == null ? null : dateOrder.getTime());
+        order.setDate(Control.convertTODate(date.getText().toString()));
         order.setPayment(payment.getText().length() == 0 ? null : payment.getText().toString());
         try {
             if (bun == null) {

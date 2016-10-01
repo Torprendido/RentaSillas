@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import java.sql.SQLException;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -100,12 +101,30 @@ public class Control {
         return sdf.format(date);
     }
 
+    public static Date convertTODate(String date) {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MMMM/yyyy");
+        try {
+            return sdf.parse(date);
+        } catch (ParseException e) {
+            return null;
+        }
+    }
+
     public void update(Orders order) throws Exception {
         try {
             Dao<Orders, Integer> dao = dbh.getOrdersDao();
             dao.update(order);
         } catch (SQLException ex) {
             throw traduceSQLException(ex.getCause().getCause().toString());
+        }
+    }
+
+    public List<Orders> recentOrderDate(Date newDay) throws Exception {
+        try {
+            Dao<Orders, Integer> dao = dbh.getOrdersDao();
+            return dao.query(dao.queryBuilder().where().eq("date", newDay).prepare());
+        } catch (SQLException ex) {
+            throw new Exception(ex);
         }
     }
 }
